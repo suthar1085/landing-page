@@ -151,7 +151,7 @@ textarea:-webkit-autofill:focus {
         <!----------------------------------------------------- rate card start ------------------------------------------------------>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w"></script>
 <div class="contact-us">
   <form id="demo-form" action="Contact US.html" method="post">
     <label for="customerName">NAME <em>&#x2a;</em></label><input id="customerName" name="customerName" required="" type="text" /><label for="customerEmail">EMAIL <em>&#x2a;</em></label><input id="customerEmail" name="customerEmail" required="" type="email" /><label for="customerPhone">PHONE</label><input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" /><label for="orderNumber">ORDER NUMBER</label><input id="orderNumber" name="orderNumber" type="text" /><label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label><textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
@@ -161,7 +161,7 @@ textarea:-webkit-autofill:focus {
     <label for="spamProtection">SPAM PROTECTION <em>&#x2a; </em><span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span></label><input id="spamProtection" name="spamProtection" type="text" />
     <button id="customerOrder">Submit</button>
     <div  class="g-recaptcha"
-        data-sitekey="6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV" 
+        data-sitekey="6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w" 
         data-callback='onSubmit' 
         data-action='submit'>
         </div>
@@ -169,7 +169,7 @@ textarea:-webkit-autofill:focus {
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
           });
         });
