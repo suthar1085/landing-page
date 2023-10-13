@@ -44,9 +44,10 @@ body {
 }
 
 .contact-us {
-  background: #f8f4e5;
-  padding: 50px 100px;
-  border-top: 10px solid #f45702;
+color: white;
+  padding: 80px 100px;
+background: rgba(255, 255, 255, 0.04);
+
 }
 
 label, input, textarea {
@@ -61,17 +62,7 @@ input {
   margin-bottom: 24pt;
 }
 
-h3 {
-  font-weight: normal;
-  font-size: 10pt;
-  line-height: 24pt;
-  font-style: italic;
-  margin: 0 0 0.5em 0;
-}
 
-span {
-  font-size: 8pt;
-}
 
 em {
   color: #f45702;
@@ -82,9 +73,15 @@ input, textarea {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  background: #f8f4e5;
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.2px);
+-webkit-backdrop-filter: blur(2.2px);
   padding-left: 5px;
   outline: none;
+color: white;
+padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 input:focus, textarea:focus {
@@ -101,17 +98,18 @@ button {
   line-height: 24pt;
   padding: 0 20px;
   border: none;
-  background: #f45702;
+  background: #03dac6;
   color: white;
   letter-spacing: 2px;
   transition: 0.2s all ease-in-out;
   border-bottom: 2px solid transparent;
   outline: none;
+  border-radius: 8px;
 }
 button:hover {
   background: inherit;
-  color: #f45702;
-  border-bottom: 2px solid #f45702;
+  color: #03dac6;
+  border-bottom: 2px solid #03dac6;
 }
 
 ::selection {
@@ -136,14 +134,14 @@ textarea:-webkit-autofill:focus {
 
   </head>
 
-  <body>
+  <body style="background-image: url('images/rm314-adj-13.jpg')">
     <header>
       <sectio class="nav">
         <h1>FRONTEND TRENDS</h1>
         <h3 class="span loader"><span class="m">B</span><span class="m">E</span><span class="m">N</span><span class="m">E</span><span class="m">F</span><span class="m">I</span><span class="m">T</span><span class="m">S</span><span class="m">&nbsp;</span><span class="m">o</span><span class="m">f</span><span class="m">&nbsp;</span><span class="m">T</span><span class="m">E</span><span class="m">C</span><span class="m">H</span><span class="m">N</span><span class="m">O</span><span class="m">L</span><span class="m">O</span><span class="m">G</span><span class="m">I</span><span class="m">E</span><span class="m">S</span></h3>
         <div class="nav-container"><a class="nav-tab" href="index.html">HOME</a><a class="nav-tab" href="#footer">ABOUT US</a><a class="nav-tab" href="Services.html">SERVICES</a><a class="nav-tab" href="#tab-typescript">OUR WORK</a><a class="nav-tab" href="#tab-vite">CONTACT US</a><span class="nav-tab-slider"></span></div>
       </sectio>
-      <main class="main" style=" width: 100vw; padding: 0%; background-image: url('https://img.freepik.com/free-vector/purple-bokeh-vector-digital-business-background_53876-110566.jpg?w=996&t=st=1696761829~exp=1696762429~hmac=eb3e6dcf8a2cb039ed5bb5c0b55bb019e3145a6f71f68bb180526ad656ee625e');
+      <main class="main" style=" width: 100vw; padding: 0%; background-image: url('images/rm314-adj-13.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%; ">
@@ -151,17 +149,16 @@ textarea:-webkit-autofill:focus {
         <!----------------------------------------------------- rate card start ------------------------------------------------------>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV"></script>
 <div class="contact-us">
   <form id="demo-form" action="Contact US.html" method="post">
     <label for="customerName">NAME <em>&#x2a;</em></label><input id="customerName" name="customerName" required="" type="text" /><label for="customerEmail">EMAIL <em>&#x2a;</em></label><input id="customerEmail" name="customerEmail" required="" type="email" /><label for="customerPhone">PHONE</label><input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" /><label for="orderNumber">ORDER NUMBER</label><input id="orderNumber" name="orderNumber" type="text" /><label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label><textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
     <h3>
       Please provide all the information about your issue you can.
     </h3>
-    <label for="spamProtection">SPAM PROTECTION <em>&#x2a; </em><span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span></label><input id="spamProtection" name="spamProtection" type="text" />
     <button id="customerOrder">Submit</button>
     <div  class="g-recaptcha"
-        data-sitekey="6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w" 
+        data-sitekey="6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV" 
         data-callback='onSubmit' 
         data-action='submit'>
         </div>
@@ -169,7 +166,7 @@ textarea:-webkit-autofill:focus {
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('6LcbZ5YoAAAAAM-qjD4Ol1VQkugFZKBty6oCsp1w', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6LdxYnwoAAAAAPn4yzzK6Tv0JokKed3zFFxZsbgV', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
           });
         });
@@ -336,11 +333,11 @@ textarea:-webkit-autofill:focus {
                 <div class="col-xs-6 col-md-3">
                   <h6>Services</h6>
                   <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/category/c-language/">Website Development</a></li>
-                    <li><a href="http://scanfcode.com/category/front-end-development/">Web Application Development</a></li>
-                    <li><a href="http://scanfcode.com/category/back-end-development/">Social Media Management</a></li>
-                    <li><a href="http://scanfcode.com/category/java-programming-language/">Branding Solutions</a></li>
-                    <li><a href="http://scanfcode.com/category/android/">Cloud Storage Solutions</a></li>
+                    <li><a href="#">Website Development</a></li>
+                    <li><a href="#">Web Application Development</a></li>
+                    <li><a href="#">Social Media Management</a></li>
+                    <li><a href="#">Branding Solutions</a></li>
+                    <li><a href="#">Cloud Storage Solutions</a></li>
                   </ul>
                 </div>
 
@@ -361,7 +358,7 @@ textarea:-webkit-autofill:focus {
               <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
                   <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                    <a href="#" style="color:#03dac6;">@Suthar1085</a>.
+                    <a href="https://github.com/suthar1085" style="color:#03dac6;">@Suthar1085</a>.
                   </p>
                 </div>
 

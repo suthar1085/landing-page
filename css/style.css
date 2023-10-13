@@ -20,7 +20,7 @@ body .footer {
 
   position: relative;
   grid-area: footer;
-  min-height: 12rem;
+ /*-- min-height: 12rem; --*/
 }
 body .footer .bubbles {
   position: absolute;
@@ -272,7 +272,7 @@ body .footer .content > div .image {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('https://img.freepik.com/free-vector/purple-bokeh-vector-digital-business-background_53876-110566.jpg?w=996&t=st=1696761829~exp=1696762429~hmac=eb3e6dcf8a2cb039ed5bb5c0b55bb019e3145a6f71f68bb180526ad656ee625e');
+  background-image: url('');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -511,7 +511,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 
 .carousel-item {
-  height: 85vh;
+  height: 75vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;

@@ -61,6 +61,22 @@
         opacity: 1;
       }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #03dac6;
+  border-radius: 10px;
+}
     </style>
 
     <!------------------------------------------------------------------------>
@@ -69,14 +85,14 @@
 
   </head>
 
-  <body>
+  <body style="background-image: url('images/rm314-adj-13.jpg')">
     <header>
       <sectio class="nav">
         <h1>FRONTEND TRENDS</h1>
         <h3 class="span loader"><span class="m">B</span><span class="m">E</span><span class="m">N</span><span class="m">E</span><span class="m">F</span><span class="m">I</span><span class="m">T</span><span class="m">S</span><span class="m">&nbsp;</span><span class="m">o</span><span class="m">f</span><span class="m">&nbsp;</span><span class="m">T</span><span class="m">E</span><span class="m">C</span><span class="m">H</span><span class="m">N</span><span class="m">O</span><span class="m">L</span><span class="m">O</span><span class="m">G</span><span class="m">I</span><span class="m">E</span><span class="m">S</span></h3>
         <div class="nav-container"><a class="nav-tab" href="index.html">HOME</a><a class="nav-tab" href="#footer">ABOUT US</a><a class="nav-tab" href="Services.html">SERVICES</a><a class="nav-tab" href="#tab-typescript">OUR WORK</a><a class="nav-tab" href="Contact US.html">CONTACT US</a><span class="nav-tab-slider"></span></div>
       </sectio>
-      <main class="main" style=" width: 100vw; padding: 0%; background-image: url('https://img.freepik.com/free-vector/purple-bokeh-vector-digital-business-background_53876-110566.jpg?w=996&t=st=1696761829~exp=1696762429~hmac=eb3e6dcf8a2cb039ed5bb5c0b55bb019e3145a6f71f68bb180526ad656ee625e');
+      <main class="main" style=" width: 100vw; padding: 0%; background-image: url('images/rm314-adj-13.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%; ">
@@ -139,7 +155,7 @@
 
 
           <div class="row">
-            <div class="col-sm-10 col-sm-offset-1" style="padding-top: 2rem; width: 100%; margin:0%;">
+            <div class="col-sm-10 col-sm-offset-1" style=" display: flex; align-items: center; overflow: auto; padding-top: 4rem; height: 90vh; width: 100%; margin:0%; ">
               <div class="col-md-4 col-sm-6">
                 <div class="card-container">
                   <div class="card">
@@ -342,6 +358,137 @@
                   </div> <!-- end card -->
                 </div> <!-- end card-container -->
               </div> <!-- end col-sm-3 -->
+<div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      <div class="cover">
+                        <img src="images/rotating_card_thumb2.png" />
+                      </div>
+                      <div class="user">
+                        <img class="img-circle" src="images/rotating_card_profile3.png" />
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h3 class="name">John Marvel</h3>
+                          <p class="profession">CEO</p>
+                          <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                        </div>
+                        <div class="footer">
+                          <i class="fa fa-mail-forward"></i> Auto Rotation
+                        </div>
+                      </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                      <div class="header">
+                        <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h4 class="text-center">Job Description</h4>
+                          <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                          <div class="stats-container">
+                            <div class="stats">
+                              <h4>235</h4>
+                              <p>
+                                Followers
+                              </p>
+                            </div>
+                            <div class="stats">
+                              <h4>114</h4>
+                              <p>
+                                Following
+                              </p>
+                            </div>
+                            <div class="stats">
+                              <h4>35</h4>
+                              <p>
+                                Projects
+                              </p>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <div class="social-links text-center">
+                          <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                          <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                          <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                        </div>
+                      </div>
+                    </div> <!-- end back panel -->
+                  </div> <!-- end card -->
+                </div> <!-- end card-container -->
+              </div> <!-- end col sm 3 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      <div class="cover">
+                        <img src="images/rotating_card_thumb3.png" />
+                      </div>
+                      <div class="user">
+                        <img class="img-circle" src="images/rotating_card_profile.png" />
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h3 class="name">Inna Corman</h3>
+                          <p class="profession">Product Manager</p>
+
+                          <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                        </div>
+                        <div class="footer">
+                          <div class="rating">
+                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                      <div class="header">
+                        <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h4 class="text-center">Job Description</h4>
+                          <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                          <div class="stats-container">
+                            <div class="stats">
+                              <h4>235</h4>
+                              <p>
+                                Followers
+                              </p>
+                            </div>
+                            <div class="stats">
+                              <h4>114</h4>
+                              <p>
+                                Following
+                              </p>
+                            </div>
+                            <div class="stats">
+                              <h4>35</h4>
+                              <p>
+                                Projects
+                              </p>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <div class="social-links text-center">
+                          <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                          <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                          <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                        </div>
+                      </div>
+                    </div> <!-- end back panel -->
+                  </div> <!-- end card -->
+                </div> <!-- end card-container -->
+              </div> <!-- end col-sm-3 -->
             </div> <!-- end col-sm-10 -->
           </div> <!-- end row -->
           <div class="space-200" style="height: 1rem"></div>
@@ -378,12 +525,12 @@
 
         <!---------------------------------------------- card style end & NASA Start ---------------------------------------------->
 
-        <div style="width: 100vw; color: white; z-index:16; display:flex; align-items:center; justify-content: center; flex-direction: column; padding-bottom: 4rem;">
+        <div style="width: 100vw; color: white; z-index:16; display:flex; align-items:center; justify-content: center; flex-direction: column; padding-bottom: 4rem; text-align: center;">
 
           <h2>NASA Astronomy Picture Of The Day</h2>
           <h3 id="title"></h3>
           <h3>Date: <span id="date"></span></h3>
-          <img id="pic" src="" alt="NASA Picture Of The Day" width="100%" height="" style="width: 80%; padding: 2rem; height: 70rem; object-fit:cover;">
+          <img id="pic" src="" alt="NASA Picture Of The Day" width="100%" height="" style="width: 83%; padding: 2rem; height: 80vh; object-fit:cover;">
           <p id="explanation" style="text-align: center; padding: 0 5rem 0 5rem"></p>
 
           <script>
@@ -559,11 +706,11 @@
                 <div class="col-xs-6 col-md-3">
                   <h6>Services</h6>
                   <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/category/c-language/">Website Development</a></li>
-                    <li><a href="http://scanfcode.com/category/front-end-development/">Web Application Development</a></li>
-                    <li><a href="http://scanfcode.com/category/back-end-development/">Social Media Management</a></li>
-                    <li><a href="http://scanfcode.com/category/java-programming-language/">Branding Solutions</a></li>
-                    <li><a href="http://scanfcode.com/category/android/">Cloud Storage Solutions</a></li>
+                    <li><a href="#">Website Development</a></li>
+                    <li><a href="#">Web Application Development</a></li>
+                    <li><a href="#">Social Media Management</a></li>
+                    <li><a href="#">Branding Solutions</a></li>
+                    <li><a href="#">Cloud Storage Solutions</a></li>
                   </ul>
                 </div>
 
@@ -584,7 +731,7 @@
               <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
                   <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                    <a href="#" style="color:#03dac6;">@Suthar1085</a>.
+                    <a href="https://github.com/suthar1085" style="color:#03dac6;">@Suthar1085</a>.
                   </p>
                 </div>
 
